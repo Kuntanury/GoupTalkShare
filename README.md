@@ -8,7 +8,7 @@
 关于上图原型实现的讨论：
 >collectionview实现，cell上面加image和textview，用cell的代理返回编辑的数据
 
-##2017年1月6日
+## 2017年1月6日
 
 同一控制器里不同的控件设置了相同的tag值 会报错吗
 
@@ -20,7 +20,7 @@
 
 >把Other Linker Flags下的属性全部删除，重新添加$(inherited)
 
-##2017年5月23日
+## 2017年5月23日
 
 hidesBottomBarWhenPushed = YES 底部工具栏延迟消失
 

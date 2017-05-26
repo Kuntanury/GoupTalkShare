@@ -33,9 +33,10 @@ hidesBottomBarWhenPushed = YES 底部工具栏延迟消失
 >
 ````` 
 -(void)viewDidAppear:(BOOL)animated {
-[b removeFromSuperview];
-[self performSelector:@selector(relayoutSubviews) withObject:nil afterDelay:0.1];
+    [b removeFromSuperview];
+    [self performSelector:@selector(relayoutSubviews) withObject:nil afterDelay:0.1];
 }
+
 -(void)relayoutSubviews {
     [self.view addSubview:b];
     [b setFrame:CGRectMake(-SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];

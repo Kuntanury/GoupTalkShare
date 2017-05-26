@@ -14,11 +14,12 @@ hidesBottomBarWhenPushed = YES 底部工具栏延迟消失
 
 ## 2017年5月26日
 
--![iamge2017052601](https://github.com/Kuntanury/GoupTalkShare/blob/master/images/2017052601.gif)
+如图，ViewController A中两个ContainerView a(红) b(绿)切换，在b所在的ViewController B中用pushViewController再popViewController之后，A中会自动切回显示a页面，
 
-同一ViewController A中两个ContainerView a(红) b(绿)切换，在b所在的ViewController B 用 pushViewController方法，再pop回的时候，A中会自动切回显示a页面。用KVC也无法监视到变化情况发生在哪里。
+![iamge2017052601](https://github.com/Kuntanury/GoupTalkShare/blob/master/images/2017052601.gif)
 
->
+>由于用KVC也无法监视到变化情况发生在哪里。目前解决办法如下
+
 ````` 
 -(void)viewDidAppear:(BOOL)animated {
     [b removeFromSuperview];

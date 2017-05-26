@@ -28,7 +28,7 @@ hidesBottomBarWhenPushed = YES 底部工具栏延迟消失
 
 -(void)relayoutSubviews {
     [self.view addSubview:b];
-    [b setFrame:CGRectMake(-SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
-    [a setFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+    [a setFrame:CGRectMake(-SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+    [b setFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
 }
 ```
